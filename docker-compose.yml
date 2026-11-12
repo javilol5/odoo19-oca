@@ -23,9 +23,9 @@ services:
       USER: ${POSTGRES_USER}
       PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - "${ODOO_PORT}:8069"
+      - "${ODOO_PORT}:8070"
     volumes:
-      - odoo-data:/var/lib/odoo
+      - odoo-web-data-oca:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
     restart: unless-stopped
@@ -35,10 +35,10 @@ services:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
     ports:
-      - "5050:80"
+      - "5051:80"
     depends_on:
       - db
 
 volumes:
   pg-data:
-  odoo-data:
+  odoo-web-data-oca:
