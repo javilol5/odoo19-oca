@@ -11,14 +11,14 @@ Este repositorio contiene la configuración y la guía paso a paso para la impla
 > 📌 **Navegación Rápida**
 >
 > * [1. Estructura del proyecto](#1-estructura-del-proyecto)
-> * [2. Aplicaciones y módulos](#2-aplicaciones-y-módulos)
-> * [3. Ejercicio 1: Tipos de productos e impuestos](#3-ejercicio-1-tipos-de-productos-e-impuestos)
-> * [4. Ejercicio 2: Recorrido completo del cliente a la factura pagada](#4-ejercicio-2-recorrido-completo-del-cliente-a-la-factura-pagada)
-> * [5. Facturación de proveedores y registros adicionales](#5-facturación-de-proveedores-y-registros-adicionales)
-> * [6. Ejercicio 3: Búsquedas guardadas y filtros](#6-ejercicio-3-búsquedas-guardadas-y-filtros)
-> * [7. Ejercicio 4: Modo desarrollador](#7-ejercicio-4-modo-desarrollador)
-> * 🚨 [10. Incidencias y solución de problemas](#10-incidencias-y-solución-de-problemas)
-> * 🤖 [11. Declaración del uso de Inteligencia Artificial](#11-declaración-del-uso-de-inteligencia-artificial)
+> * [2. Módulos instalados en Aplicaciones](#2-módulos-instalados-en-aplicaciones)
+> * [3. Creación de declaración del Modelo 303](#3-creación-de-declaración-del-modelo-303)
+> * [4. Verificación de imagen personalizada (`sxe-odoo`)](#4-verificación-de-imagen-personalizada-sxe-odoo)
+> * [5. Importación de librería en el contenedor](#5-importación-de-librería-en-el-contenedor)
+> * [6. Exclusión de `addons/oca/` en el repositorio](#6-exclusión-de-addonsoca-en-el-repositorio)
+> * [7. Integridad de la pila oficial (`odoo19`)](#7-integridad-de-la-pila-oficial-odoo19)
+> * 🚨 [8. Incidencias y solución de problemas](#8-incidencias-y-solución-de-problemas)
+> * 🤖 [9. Declaración del uso de Inteligencia Artificial](#9-declaración-del-uso-de-inteligencia-artificial)
 
 
 ## 1. Estructura del proyecto
@@ -34,10 +34,35 @@ Este repositorio contiene la configuración y la guía paso a paso para la impla
     └── account_debit_note (Núcleo de Odoo / OCA según versión)
 ```
 
+## 2. Los tres módulos aparecen como instalados en Aplicaciones
+
+![](/images/.png)
+
+## 3. En Facturación → Informes (o el menú AEAT) se puede crear una declaración del 303
+
+![](/images/.pn
+
+## 4. La imagen en uso es la tuya: ´´´docker compose images´´´ muestra ```sxe-odoo```
+
+![](/images/.pn
+
+## 5. La librería se importa sin error dentro del contenedor
+
+![](/images/.pn
+
+## 6. ```addons/oca/``` no está en el repositorio
+
+![](/images/.pn
+
+## 7. La pila de la actividad 1 sigue intacta: docker compose images en odoo19 muestra la imagen oficial odoo
+
+![](/images/.pn
 
 
 
-## 10. Incidencias y Solución de Problemas
+
+
+## 8. Incidencias y Solución de Problemas
 
 | Fecha | Síntoma / Problema                                         | Causa                                                            | Solución |
 | :--- |:-----------------------------------------------------------|:-----------------------------------------------------------------| :--- |
@@ -47,7 +72,7 @@ Este repositorio contiene la configuración y la guía paso a paso para la impla
 
 ---
 
-## 11. Declaración del Uso de Inteligencia Artificial
+## 9. Declaración del Uso de Inteligencia Artificial
 
 - Ayuda para encontrar errores de sintaxis
 - Ayuda para encontrar las dependencias necesarias
