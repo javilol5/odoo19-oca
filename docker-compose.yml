@@ -39,6 +39,7 @@ services:
     depends_on:
       - db
 
+      
 volumes:
   pg-data:
   odoo-web-data-oca:
