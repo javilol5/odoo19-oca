@@ -17,8 +17,8 @@ Este repositorio contiene la configuración y la guía paso a paso para la impla
 > *  [5. ...](#5-facturación-de-proveedores-y-registros-adicionales)
 > *  [6. ...](#6-ejercicio-3-búsquedas-guardadas-y-filtros)
 > *  [7. ...](#7-ejercicio-4-modo-desarrollador)
-> * 🚨 [8. Incidencias y Solución de Problemas](#8-incidencias-y-solución-de-problemas)
-> * 🤖 [9. Declaración del Uso de Inteligencia Artificial](#9-declaración-del-uso-de-inteligencia-artificial)
+> * 🚨 [10. Incidencias y Solución de Problemas](#10-incidencias-y-solución-de-problemas)
+> * 🤖 [11. Declaración del Uso de Inteligencia Artificial](#11-declaración-del-uso-de-inteligencia-artificial)
 
 
 ## 1. Estructura del proyecto
@@ -40,18 +40,19 @@ Este repositorio contiene la configuración y la guía paso a paso para la impla
 
 
 
-## 8. Incidencias y Solución de Problemas
+## 10. Incidencias y Solución de Problemas
 
 | Fecha | Síntoma / Problema                                         | Causa                                                            | Solución |
 | :--- |:-----------------------------------------------------------|:-----------------------------------------------------------------| :--- |
-| 12/11/26 | No funciona | Error de sintaxis | Aprender a Leer/Escribir |
-|  |  |  |  |
-|  |  |  |  |
+| 12/11/26 | No funciona al ejecutar docker compose up -d | Error de sintaxis (docker co**s**mpose) | Aprender a Leer/Escribir |
+| 12/11/26 | No aparece account_tax_balande (303) | Dependencia no descargada | Descargar dependencia |
+| 12/11/26 |  |  |  |
 
 ---
 
-## 9. Declaración del Uso de Inteligencia Artificial
+## 11. Declaración del Uso de Inteligencia Artificial
 
-- 
-- 
-- 
+- Ayuda para encontrar errores de sintaxis
+- Ayuda para encontrar las dependencias necesarias
+- Ligera guía para actualizar Odoo
+- Embellecer el Readme.md
