@@ -44,7 +44,7 @@ Este repositorio contiene la configuración y la guía paso a paso para la impla
 
 | Fecha | Síntoma / Problema                                         | Causa                                                            | Solución |
 | :--- |:-----------------------------------------------------------|:-----------------------------------------------------------------| :--- |
-|  |  |  |  |
+| 12/11/26 | No funciona | Error de sintaxis | Aprender a Leer/Escribir |
 |  |  |  |  |
 |  |  |  |  |
 

@@ -14,20 +14,21 @@ services:
       retries: 5
     restart: unless-stopped
   odoo:
-    image: odoo:${ODOO_TAG}
-    depends_on:
-      db:
-        condition: service_healthy
-    environment:
-      HOST: db
-      USER: ${POSTGRES_USER}
-      PASSWORD: ${POSTGRES_PASSWORD}
+    build:
+      context: .
+      args:
+        ODOO_TAG: 19.0
+    image: sxe-odoo:19.0
     ports:
-      - "${ODOO_PORT}:8070"
+      - "8070:8069"
     volumes:
       - odoo-web-data-oca:/var/lib/odoo
-      - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
+      - ./odoo.conf:/etc/odoo/odoo.conf
+    environment:
+      - HOST=db
+      - USER=odoo
+      - PASSWORD=odoo
     restart: unless-stopped
   pgadmin:
     image: dpage/pgadmin4
